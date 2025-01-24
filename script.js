@@ -99,15 +99,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (sessionStorage.getItem('ageVerified') === 'true') {
         ageOverlay.style.display = 'none';
         document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto'; 
         return;
     }
 
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden'; 
 
   
     yesButton.addEventListener('click', function () {
         ageOverlay.style.display = 'none';
         document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
         sessionStorage.setItem('ageVerified', 'true');
     });
 

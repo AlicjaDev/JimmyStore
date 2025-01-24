@@ -1,9 +1,40 @@
+
+@media screen and (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .explore-section {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative; 
+    }
+
+    .shop-now,
+    .delivery-service,
+    .mapvisit-container,
+    .about-container,
+    footer {
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+}
+
+
+
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 header {
@@ -53,7 +84,7 @@ header img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: -55px;
+    margin-top: -10px;
     margin-bottom: 90px;
     background-color: #000000;
 }
@@ -84,10 +115,6 @@ header img {
     outline: 2px solid rgb(255, 255, 255);
 }
 
-
-body {
-    margin: 0;
-}
 
 
 .promo-section {
@@ -306,15 +333,17 @@ body {
     }
 
     .scroll-arrow {
-        font-size: 24px !important;
+        font-size: 18px !important;
         position: absolute;
         top: 40%;
         transform: translateY(-50%);
         z-index: 10;
+        width: 20px; 
+        height: 25px; 
     }
 
     .scroll-arrow-left {
-        left: 5%;
+        left: 10%;
     }
 
     .scroll-arrow-right {
@@ -740,12 +769,19 @@ body {
 
     .auth-container {
         margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-license, .auth-container span {
+        display: block;
+        margin-bottom: 5px;
     }
 
     .footer-links {
         flex-direction: row;
         gap: 50px;
         padding-bottom: 10px;
+        text-align: center;
     }
 
     .footer-links a {
